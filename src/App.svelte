@@ -9,20 +9,23 @@
         <img src="./images/drawers.jpg" alt="green drawers with vase on top" />
     </div>
 
-    <div class="article-preview-text">
+    <div class="article-preview-section">
+
         <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
         <p>Ever been in a room and felt like something was missing? Perhaps it felt slighly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
-    </div>
 
-    <footer class="article-footer">
-        <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton" />
+        <footer class="article-footer">
             <div class="article-author">
-                <h2>Michelle Appleton</h2>
-                <time datetime="2020-06-28">28 Jun 2020</time>
+                <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton" />
+                <div>
+                    <h2>Michelle Appleton</h2>
+                    <time datetime="2020-06-28">28 Jun 2020</time>
+                </div>
             </div>
-        <button type="button" aria-label="share"><img src="./images/icon-share.svg" alt="" /></button>
-        
+            <button id="share-button" type="button" aria-label="share"><img src="./images/icon-share.svg" alt="" /></button>
         </footer>
+
+    </div>
 
   </article>
 </main>
@@ -47,5 +50,92 @@
         font-family: 'Manrope', sans-serif;
         font-style: normal;
     }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        background-color: var(--light-grayish-blue);
+    }
+
+    .article-preview-card {
+        display: flex;
+        flex-direction: column;
+        max-width: 25em;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .article-image img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .article-preview-section {
+        padding: 2.6em 2.6em 1.5em 2.6em;
+    }
+    
+    .article-preview-section h1{
+        font-size: 1.225rem;
+        color: var(--very-dark-greyish-blue);
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 0.8em;
+    }
+
+    .article-preview-section p{
+        font-size: 1rem;
+        color: var(--desaturated-dark-blue);
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 2em;
+    }
+    
+    .article-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .article-footer img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .article-author {
+        display: flex;
+        gap: 1.2em;
+    }
+    
+    .article-author h2 {
+        font-size: 1rem;
+        color: var(--very-dark-greyish-blue);
+        line-height: 1.5;
+    }
+
+    .article-author time {
+        font-size: 1rem;
+        color: var(--desaturated-dark-blue);
+        line-height: 1.5;
+    }
+
+    #share-button {
+        border: none;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: var(--light-grayish-blue);
+    }
+    
+    #share-button img {
+        object-fit: contain;
+        max-width: 50%;
+    }
+
+
   
 </style>
