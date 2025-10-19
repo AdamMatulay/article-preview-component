@@ -96,7 +96,7 @@
         line-height: 1.5;
     }
 
-    #share-button {
+    .share-button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -111,16 +111,16 @@
         z-index: 1000;
     }
     
-    #share-button img {
+    .share-button img {
         width: 15px;
         object-fit: contain;
     }
 
-    #share-button:hover, #share-button:focus{
+    .share-button:hover, .share-button:focus{
         background-color: var(--desaturated-dark-blue);
     }
 
-    #share-button:hover img,  #share-button:focus img {
+    .share-button:hover img,  .share-button:focus img {
         filter: brightness(0) invert(1);
     }
 

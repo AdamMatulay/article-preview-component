@@ -1,4 +1,4 @@
-const shareButton = document.getElementById('share-button');
+const shareButton = document.querySelector('.share-button');
 const shareOverlay = document.querySelector('.share-overlay');
 
 function toggleShareOverlay() {
