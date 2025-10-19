@@ -67,20 +67,25 @@
         border-radius: 10px;
     }
 
+    .article-image {
+        height: 15em;
+    }
+
     .article-image img {
         width: 100%;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 35%;
         border-radius: 10px 10px 0px 0px;
     }
 
     .article-preview-section {
-        padding: 2.6em 2.6em 1.5em 2.6em;
+        padding: 2.8em 2.8em 1.5em 2.8em;
     }
     
     .article-preview-section h1{
         font-size: 1.225rem;
         color: var(--very-dark-greyish-blue);
-        font-weight: 700;
         line-height: 1.5;
         margin-bottom: 0.8em;
     }
@@ -88,7 +93,6 @@
     .article-preview-section p{
         font-size: 1rem;
         color: var(--desaturated-dark-blue);
-        font-weight: 500;
         line-height: 1.5;
         margin-bottom: 2em;
     }
@@ -124,6 +128,9 @@
     }
 
     #share-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: none;
         border-radius: 50%;
         width: 32px;
@@ -132,10 +139,39 @@
     }
     
     #share-button img {
+        width: 15px;
         object-fit: contain;
-        max-width: 50%;
     }
 
+    /* DESKTOP */
 
+    @media only screen and (min-width: 768px) {
+        
+        .article-preview-card {
+            display: flex;
+            flex-direction: row;
+            max-width: 54.5em;
+        }
+
+        .article-image {
+            height: auto;
+        }
+
+        .article-image img {
+            width: 22.5em;
+            object-position: left;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .article-preview-section {
+            padding: 2.8em 2.8em 2.5em 2.8em;
+        }
+
+        .article-preview-section h1{
+            font-size: 1.5rem;
+            line-height: 1.4;
+        }
+
+    }
   
 </style>
