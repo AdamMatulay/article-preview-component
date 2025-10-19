@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
 
   <title>Article preview component</title>
 
@@ -34,11 +35,11 @@
                         <time datetime="2020-06-28">28 Jun 2020</time>
                     </div>
                 </div>
-                <div id="share-overlay">
+                <div id="share-overlay" class="hidden">
                     <p>SHARE</p>
-                    <img src="./images/icon-facebook.svg" alt="facebook" />
-                    <img src="./images/icon-twitter.svg" alt="twitter" />
-                    <img src="./images/icon-pinterest.svg" alt="pinterest" />
+                    <a href="" target="_blank" rel="noopener"><img src="./images/icon-facebook.svg" alt="facebook" /></a>
+                    <a href="" target="_blank" rel="noopener"><img src="./images/icon-twitter.svg" alt="twitter" /></a>
+                    <a href="" target="_blank" rel="noopener"><img src="./images/icon-pinterest.svg" alt="pinterest" /></a>
                 </div>
                 <button on:click={toggleShareOverlay} id="share-button" type="button" aria-label="share this article"><img src="./images/icon-share.svg" alt="" /></button>
             </footer>
