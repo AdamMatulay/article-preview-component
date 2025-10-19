@@ -12,7 +12,7 @@
     <div class="article-preview-section">
 
         <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-        <p>Ever been in a room and felt like something was missing? Perhaps it felt slighly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+        <p class="article-preview-text">Ever been in a room and felt like something was missing? Perhaps it felt slighly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
 
         <footer class="article-footer">
             <div class="article-author">
@@ -22,8 +22,15 @@
                     <time datetime="2020-06-28">28 Jun 2020</time>
                 </div>
             </div>
-            <button id="share-button" type="button" aria-label="share"><img src="./images/icon-share.svg" alt="" /></button>
+            <div id="share-overlay">
+                <p>SHARE</p>
+                <img src="./images/icon-facebook.svg" alt="facebook" />
+                <img src="./images/icon-twitter.svg" alt="twitter" />
+                <img src="./images/icon-pinterest.svg" alt="pinterest" />
+            </div>
+            <button id="share-button" type="button" aria-label="share this article"><img src="./images/icon-share.svg" alt="" /></button>
         </footer>
+        
 
     </div>
 
@@ -90,7 +97,7 @@
         margin-bottom: 0.8em;
     }
 
-    .article-preview-section p{
+    .article-preview-text{
         font-size: 1rem;
         color: var(--desaturated-dark-blue);
         line-height: 1.5;
@@ -104,7 +111,7 @@
         align-items: center;
     }
 
-    .article-footer img {
+    .article-author img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -137,10 +144,41 @@
         height: 32px;
         background-color: var(--light-grayish-blue);
     }
+
+    #share-button:hover, #share-button:active, #share-button:focus{
+        background-color: var(--desaturated-dark-blue);
+    }
     
     #share-button img {
         width: 15px;
         object-fit: contain;
+    }
+
+    #share-overlay {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 1.2em;
+        color: var(--grayish-blue);
+        letter-spacing: 0.35rem;
+        font-size: 0.95rem;
+    }
+
+    #share-overlay img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .article-author {
+        display: none;
+    }
+
+    .article-footer {
+        background-color: var(--very-dark-greyish-blue);
+        margin: -0.5em -2.8em -1.5em -2.8em;
+        padding: 1.3em 2.8em;
+        border-radius: 0px 0px 10px 10px;
     }
 
     /* DESKTOP */
