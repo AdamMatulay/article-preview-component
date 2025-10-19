@@ -1,12 +1,8 @@
 const shareButton = document.getElementById('share-button');
-const articleAuthor = document.querySelector('.article-author');
-const articleFooter = document.querySelector('.article-footer');
-const shareOverlay = document.getElementById('share-overlay');
+const shareOverlay = document.querySelector('.share-overlay');
 
 function toggleShareOverlay() {
-    articleFooter.classList.toggle('footer-active');
-    articleAuthor.classList.toggle('hidden');
-    shareOverlay.classList.toggle('active');
+    shareOverlay.classList.toggle('hidden');
 }
 
 shareButton.addEventListener('click', toggleShareOverlay);

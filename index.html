@@ -35,17 +35,20 @@
                         <time datetime="2020-06-28">28 Jun 2020</time>
                     </div>
                 </div>
-                <div id="share-overlay" class="hidden">
-                    <p>SHARE</p>
-                    <a href="" target="_blank" rel="noopener"><img src="./images/icon-facebook.svg" alt="facebook" /></a>
-                    <a href="" target="_blank" rel="noopener"><img src="./images/icon-twitter.svg" alt="twitter" /></a>
-                    <a href="" target="_blank" rel="noopener"><img src="./images/icon-pinterest.svg" alt="pinterest" /></a>
-                </div>
+                
                 <button on:click={toggleShareOverlay} id="share-button" type="button" aria-label="share this article"><img src="./images/icon-share.svg" alt="" /></button>
+                
+                <div class="share-overlay hidden">
+                    <p>SHARE</p>
+                    <a href="" rel="noopener"><img src="./images/icon-facebook.svg" alt="facebook" /></a>
+                    <a href="" rel="noopener"><img src="./images/icon-twitter.svg" alt="twitter" /></a>
+                    <a href="" rel="noopener"><img src="./images/icon-pinterest.svg" alt="pinterest" /></a>
+                </div>
             </footer>
-            
 
         </div>
+
+        
 
       </article>
     </main>
